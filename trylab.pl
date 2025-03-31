@@ -1,9 +1,8 @@
 find_divisors(N, Divisors) :-
     findall(D, (between(1, N, D), N mod D =:= 0), Divisors).
 
-% Стартовая точка программы
 start :-
-    write('Введите число: '),
+    write('Г‚ГўГҐГ¤ГЁГІГҐ Г·ГЁГ±Г«Г®: '),
     read(N),
     find_divisors(N, Divisors),
-    write('Делители: '), write(Divisors), nl.
+    write('Г„ГҐГ«ГЁГІГҐГ«ГЁ: '), write(Divisors), nl.
